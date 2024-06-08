@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie clicker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-200">
+    <div class="container mx-auto">
+        <h1 class="text-4xl text-center mt-8 mb-16">Cookie clicker <img id="goldenCookie" class="w-8 cursor-pointer inline-block" src="assets/img/goldenCookie.png" alt=""></h1>
+        <div class="grid grid-cols-10 items-center justify-items-center">
+            <div class="col-span-4">
+                <ul id="upgrades" class="flex flex-col items-center justify-around gap-2">
+                    <li id="upgrade1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 cursor-pointer w-64 text-center">Curseur <br/> (<span id="price-up1">15</span> cookies)</li>
+                    <li id="upgrade2" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 cursor-pointer w-64 text-center">Ferme <br/> (<span id="price-up2">100</span> cookies)</li>
+                    <li id="upgrade3" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 cursor-pointer w-64 text-center">Mine <br/> (<span id="price-up3">500</span> cookies)</li>
+                    <li id="upgrade4" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 cursor-pointer w-64 text-center">Usine <br/> (<span id="price-up4">3000</span> cookies)</li>
+                    <li id="upgrade5" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 cursor-pointer w-64 text-center">Banque <br/> (<span id="price-up5">10000</span> cookies)</li>
+                </ul>
+            </div>
+            <div class="col-span-2">
+                <p class="text-xl font-bold mb-4">Cookies par seconde : <span id="cookies-per-second">0</span></p>
+                <p class="text-center"><span id="cookie" class="mr-2 text-5xl font-bold">0</span></p>
+                <img id="click" src="assets/img/cookie.png" class="block mx-auto w-56 m-16" />
+            </div>
+            <div class="col-span-4">
+                <div class="p-4 bg-white rounded shadow w-full">
+                    <h2 class="text-xl font-bold mb-4">Bâtiments</h2>
+                    <ul id="building-count" class="list-none">
+                        <li class="flex items-center justify-between py-2 border-b border-gray-300">
+                            <span id="count-up1">0</span> Curseurs
+                        </li>
+                        <li class="flex items-center justify-between py-2 border-b border-gray-300">
+                            <span id="count-up2">0</span> Fermes
+                        </li>
+                        <li class="flex items-center justify-between py-2 border-b border-gray-300">
+                            <span id="count-up3">0</span> Mines
+                        </li>
+                        <li class="flex items-center justify-between py-2 border-b border-gray-300">
+                            <span id="count-up4">0</span> Usines
+                        </li>
+                        <li class="flex items-center justify-between py-2">
+                            <span id="count-up5">0</span> Banques
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/cookie.js"></script>
+</body>
+</html>
